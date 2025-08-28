@@ -23,8 +23,8 @@ text = pygame.font.SysFont("Comic Sans MS", 20, "Bold")
 heading = pygame.font.SysFont("Comic Sans MS", 40, "Bold")
 
 #Need to create new button designs and then blit them into the system
-newButton = pygame.image.load("C:\\Users\\Edwin\\Documents\\Python\\Pygame Module\\New Button.jpg").convert_alpha()
-seenButton = pygame.image.load("C:\\Users\\Edwin\\Documents\\Python\\Pygame Module\\Seen.png").convert_alpha()
+newButton = pygame.image.load("New Button.jpg").convert_alpha()
+seenButton = pygame.image.load("Seen.png").convert_alpha()
 image_size = (150, 150) #Size of images
 
 word = random.choice(WORDS) #A word is randomised initally
@@ -99,4 +99,5 @@ while run:
     #Needed help with running the timer
     if not gameOver:
         current_time = pygame.time.get_ticks()
+
         draw()
